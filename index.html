@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emaan Kashif — Data Scientist & ML Engineer</title>
+  <meta name="description"
+    content="Portfolio of Emaan Kashif, BS Data Science student at NFC-IEFR building production ML models, SQL data pipelines, and web applications.">
+  <meta name="keywords"
+    content="Emaan Kashif, Data Scientist, Machine Learning, Faisalabad, Data Science Portfolio, Python, SQL, FastAPI, scikit-learn">
+  <meta name="author" content="Emaan Kashif">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Emaan Kashif — Data Scientist">
+  <meta property="og:description"
+    content="Turning raw real-world data into intelligent ML models, clean SQL pipelines, and web applications.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- SCROLL PROGRESS INDICATOR -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- CUSTOM CURSOR GLOW -->
+  <div class="cursor-glow" id="cursor-glow"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-content">
+      <a href="#" class="brand-logo" aria-label="Emaan Kashif portfolio home">
+        <span class="logo-badge">EK</span>
+        <span>Portfolio</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#simulator">Live ML Demo</a></li>
+        <li><a href="#pipeline">Pipeline</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <button class="btn-terminal-trigger" id="open-terminal-btn" title="Launch Interactive Data Science CLI">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="4 17 10 11 4 5"></polyline>
+            <line x1="12" y1="19" x2="20" y2="19"></line>
+          </svg>
+          <span>CLI Terminal</span>
+          <span class="key-badge">Ctrl+K</span>
+        </button>
+        <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section" id="about">
+    <canvas id="hero-canvas"></canvas>
+
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          <span>Open for Data Science Work &amp; Internships</span>
+        </div>
+
+        <div class="hero-name-stack">
+          <div class="hero-name-line">
+            <span class="hero-name-prefix">Emaan</span>
+            <span class="hero-name-accent">Kashif</span>
+          </div>
+          <div class="hero-role-badge">Data Scientist • ML Engineer</div>
+        </div>
+
+        <h1 class="hero-title">
+          Command over the <span class="text-gradient-cyan">full data pipeline</span>, not just the model.
+        </h1>
+
+        <p class="hero-subtitle">
+          I’m a BS Data Science student at NFC-IEFR Faisalabad, turning messy real-world data — donor registries, crop
+          yields, clinical records — into production ML models, relational schemas, and live web apps.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary magnetic-btn">
+            <span>Explore Work</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#simulator" class="btn btn-secondary magnetic-btn">
+            <span>Try Live ML Demo</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number text-gradient-cyan" data-count-to="5" data-suffix="+">0</span>
+            <span class="stat-label">End-to-End Projects</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number text-gradient-emerald" data-count-to="100" data-suffix="K+">0</span>
+            <span class="stat-label">Cleaned Records</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number text-amber" data-count-to="94.2" data-suffix="%" data-decimal="1">0</span>
+            <span class="stat-label">Model Accuracy</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">6th Sem</span>
+            <span class="stat-label">BS Data Science</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Interactive Card -->
+      <div class="hero-visual-card tilt-card">
+        <div class="card-spotlight"></div>
+        <div class="visual-header">
+          <div class="window-dots">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <span class="visual-title">pipeline_engine.py — main</span>
+        </div>
+
+        <div class="code-stream">
+          <p><span class="cm"># Load, clean & train pipeline</span></p>
+          <p><span class="kw">import</span> pandas <span class="kw">as</span> pd</p>
+          <p><span class="kw">from</span> sklearn.ensemble <span class="kw">import</span> RandomForestClassifier</p>
+          <p><span class="kw">from</span> fastapi <span class="kw">import</span> FastAPI</p>
+          <br>
+          <p><span class="fn">@app.post</span>(<span class="str">"/predict/risk"</span>)</p>
+          <p><span class="kw">def</span> <span class="fn">predict_clinical_risk</span>(patient: PatientData):</p>
+          <p>&nbsp;&nbsp;df = <span class="fn">preprocess_sql_features</span>(patient)</p>
+          <p>&nbsp;&nbsp;prob = model.<span class="fn">predict_proba</span>(df)[<span class="num">0</span>][<span
+              class="num">1</span>]</p>
+          <p>&nbsp;&nbsp;<span class="kw">return</span> {<span class="str">"risk_score"</span>: prob * <span
+              class="num">100</span>}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVE ML SIMULATOR SECTION -->
+  <section class="section" id="simulator">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">01 // Interactive ML Playground</div>
+        <h2 class="section-title">Test a real-time Machine Learning model simulation.</h2>
+        <p class="section-subtitle">Adjust patient clinical indicators below to see the Random Forest model calculate
+          disease risk and feature contribution score live.</p>
+      </div>
+
+      <div class="simulator-container reveal-up">
+        <div class="simulator-grid">
+
+          <!-- Controls Column -->
+          <div class="sim-controls">
+            <div class="sim-controls-header">
+              <h3 style="font-size: 18px;">Patient Indicators</h3>
+              <div class="preset-buttons">
+                <button class="btn-preset active" data-preset="healthy">Healthy</button>
+                <button class="btn-preset" data-preset="borderline">Borderline</button>
+                <button class="btn-preset" data-preset="highrisk">High Risk</button>
+              </div>
+            </div>
+
+            <!-- Sliders -->
+            <div class="slider-group">
+              <div class="slider-header">
+                <span class="slider-label">Age</span>
+                <span class="slider-val" id="val-age">45 yrs</span>
+              </div>
+              <input type="range" id="input-age" min="20" max="80" value="45">
+            </div>
+
+            <div class="slider-group">
+              <div class="slider-header">
+                <span class="slider-label">Resting Blood Pressure</span>
+                <span class="slider-val" id="val-bp">120 mmHg</span>
+              </div>
+              <input type="range" id="input-bp" min="90" max="200" value="120">
+            </div>
+
+            <div class="slider-group">
+              <div class="slider-header">
+                <span class="slider-label">Serum Cholesterol</span>
+                <span class="slider-val" id="val-chol">210 mg/dL</span>
+              </div>
+              <input type="range" id="input-chol" min="120" max="400" value="210">
+            </div>
+
+            <div class="slider-group">
+              <div class="slider-header">
+                <span class="slider-label">Max Heart Rate Achieved</span>
+                <span class="slider-val" id="val-hr">160 bpm</span>
+              </div>
+              <input type="range" id="input-hr" min="70" max="210" value="160">
+            </div>
+
+          </div>
+
+          <!-- ML Output Gauge Column -->
+          <div class="sim-output-card">
+            <div class="gauge-wrapper">
+              <svg class="gauge-svg" viewBox="0 0 100 60">
+                <defs>
+                  <linearGradient id="gauge-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#10b981" />
+                    <stop offset="50%" stop-color="#f59e0b" />
+                    <stop offset="100%" stop-color="#ef4444" />
+                  </linearGradient>
+                </defs>
+                <path class="gauge-bg" d="M 10 50 A 40 40 0 0 1 90 50" />
+                <path class="gauge-value" id="gauge-path" d="M 10 50 A 40 40 0 0 1 90 50" />
+              </svg>
+              <div class="gauge-text">
+                <div class="gauge-score text-gradient-cyan" id="gauge-score">18%</div>
+                <div class="gauge-status text-emerald" id="gauge-status">Low Risk</div>
+              </div>
+            </div>
+
+            <div class="feature-breakdown">
+              <div class="fb-header">Model Feature Weight Impact</div>
+              <div class="fb-row">
+                <span class="fb-name">Chest Pain</span>
+                <div class="fb-bar-bg">
+                  <div class="fb-bar-fill" id="bar-cp" style="width: 25%;"></div>
+                </div>
+                <span class="fb-pct" id="pct-cp">25%</span>
+              </div>
+              <div class="fb-row">
+                <span class="fb-name">Max Heart Rate</span>
+                <div class="fb-bar-bg">
+                  <div class="fb-bar-fill" id="bar-hr" style="width: 35%;"></div>
+                </div>
+                <span class="fb-pct" id="pct-hr">35%</span>
+              </div>
+              <div class="fb-row">
+                <span class="fb-name">Cholesterol</span>
+                <div class="fb-bar-bg">
+                  <div class="fb-bar-fill" id="bar-chol" style="width: 20%;"></div>
+                </div>
+                <span class="fb-pct" id="pct-chol">20%</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DATA PIPELINE SECTION -->
+  <section class="section" id="pipeline">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">02 // Pipeline Architecture</div>
+        <h2 class="section-title">End-to-end data craftsmanship.</h2>
+        <p class="section-subtitle">How I bridge dirty raw datasets into operational models and user-facing
+          intelligence.</p>
+      </div>
+
+      <div class="pipeline-flow">
+        <div class="pipeline-step reveal-up">
+          <div class="step-number">STEP 01</div>
+          <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <h3>Raw Data Ingestion</h3>
+          <p>Extracting scattered CSVs, donor registries, agriculture statistics &amp; clinical logs with strict type
+            checks.</p>
+        </div>
+
+        <div class="pipeline-step reveal-up">
+          <div class="step-number">STEP 02</div>
+          <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+          </svg>
+          <h3>SQL &amp; Schema Cleaning</h3>
+          <p>Resolving key mismatches, null imputations, foreign constraints, and constructing relational database
+            schemas.</p>
+        </div>
+
+        <div class="pipeline-step reveal-up">
+          <div class="step-number">STEP 03</div>
+          <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+          </svg>
+          <h3>ML Model Training</h3>
+          <p>Feature scaling, Random Forest / classification modeling, cross-validation, and performance evaluation.</p>
+        </div>
+
+        <div class="pipeline-step reveal-up">
+          <div class="step-number">STEP 04</div>
+          <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+          <h3>Production App Deployment</h3>
+          <p>Wrapping models into FastAPI backends, Streamlit dashboards, and high-performance interactive web
+            interfaces.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SELECTED WORK SHOWCASE -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">03 // Selected Work</div>
+        <h2 class="section-title">Projects across Healthcare, Agriculture &amp; Gaming.</h2>
+        <p class="section-subtitle">Real-world applications built with clean code, solid math, and user-centric
+          interfaces.</p>
+      </div>
+
+      <!-- Filters -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="ml">Machine Learning</button>
+        <button class="filter-btn" data-filter="data">Data Pipelines &amp; SQL</button>
+        <button class="filter-btn" data-filter="web">Web Applications</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: Featured Chess App -->
+        <div class="project-card featured tilt-card" data-category="ml web">
+          <div class="card-spotlight"></div>
+          <div class="card-top">
+            <span class="project-index">01 // FEATURED</span>
+            <span class="project-badge">Full-Stack ML</span>
+          </div>
+          <h3 class="project-title">Human vs AI Chess + Outcome Predictor</h3>
+          <p class="project-desc">
+            A full-stack chess web application pairing a Stockfish-powered live analysis engine with a machine learning
+            classifier trained on Lichess game data to predict game outcome probabilities before the first move is made.
+          </p>
+          <div class="project-tags">
+            <span class="tag">FastAPI</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Lichess EDA</span>
+            <span class="tag">Stockfish Engine</span>
+          </div>
+          <div class="card-bottom">
+            <span class="card-link" style="color: var(--text-dim);">Design · ML Model · API · Deployment</span>
+            <a href="https://github.com/EmaanKashif" target="_blank" rel="noopener" class="card-link">
+              <span>View Source Code</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: Blood Donor Data Pipeline -->
+        <div class="project-card tilt-card" data-category="data">
+          <div class="card-spotlight"></div>
+          <div class="card-top">
+            <span class="project-index">02</span>
+            <span class="project-badge">Data Engineering</span>
+          </div>
+          <h3 class="project-title">Blood Donor Data Pipeline</h3>
+          <p class="project-desc">
+            Diagnosed and resolved schema mismatches across a multi-file blood donation dataset — donor registry,
+            donation history, CBC lab results, and mobile campaign records.
+          </p>
+          <div class="project-tags">
+            <span class="tag">SQL</span>
+            <span class="tag">ETL Pipeline</span>
+            <span class="tag">Data Cleaning</span>
+            <span class="tag">Relational Modeling</span>
+          </div>
+          <div class="card-bottom">
+            <span class="card-link" style="color: var(--text-dim);">Schema Architect</span>
+            <a href="https://github.com/EmaanKashif" target="_blank" rel="noopener" class="card-link">
+              <span>View Code</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3: Punjab Agriculture Analysis -->
+        <div class="project-card tilt-card" data-category="data">
+          <div class="card-spotlight"></div>
+          <div class="card-top">
+            <span class="project-index">03</span>
+            <span class="project-badge">Analytics &amp; Power BI</span>
+          </div>
+          <h3 class="project-title">Punjab Agriculture Yield Analysis</h3>
+          <p class="project-desc">
+            Structured raw Punjab Agriculture Statistics into a relational dataset and analyzed how rainfall, average
+            temperatures, and canal water discharge impact major crop yields across districts.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Excel</span>
+            <span class="tag">Power BI</span>
+            <span class="tag">Data Modeling</span>
+            <span class="tag">Statistical EDA</span>
+          </div>
+          <div class="card-bottom">
+            <span class="card-link" style="color: var(--text-dim);">Data Modeling &amp; Insights</span>
+            <a href="https://github.com/EmaanKashif" target="_blank" rel="noopener" class="card-link">
+              <span>View Code</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4: Heart Disease Prediction -->
+        <div class="project-card tilt-card" data-category="ml">
+          <div class="card-spotlight"></div>
+          <div class="card-top">
+            <span class="project-index">04</span>
+            <span class="project-badge">Machine Learning</span>
+          </div>
+          <h3 class="project-title">Heart Disease Clinical Classifier</h3>
+          <p class="project-desc">
+            A Random Forest classifier trained on the Cleveland heart disease dataset, incorporating feature importance
+            analysis to evaluate key clinical risk indicators.
+          </p>
+          <div class="project-tags">
+            <span class="tag">scikit-learn</span>
+            <span class="tag">Random Forest</span>
+            <span class="tag">Python</span>
+            <span class="tag">Clinical ML</span>
+          </div>
+          <div class="card-bottom">
+            <span class="card-link" style="color: var(--text-dim);">Model Training &amp; Validation</span>
+            <a href="https://github.com/EmaanKashif" target="_blank" rel="noopener" class="card-link">
+              <span>View Code</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 5: Skin Disease Detector -->
+        <div class="project-card tilt-card" data-category="ml web">
+          <div class="card-spotlight"></div>
+          <div class="card-top">
+            <span class="project-index">05</span>
+            <span class="project-badge">CV &amp; Streamlit</span>
+          </div>
+          <h3 class="project-title">Skin Disease Medical Classifier</h3>
+          <p class="project-desc">
+            Identifies potential dermatological skin conditions from uploaded images of affected areas, built with an ML
+            classifier and an intuitive Streamlit interface.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Streamlit</span>
+            <span class="tag">Computer Vision</span>
+            <span class="tag">Python</span>
+          </div>
+          <div class="card-bottom">
+            <span class="card-link" style="color: var(--text-dim);">Model &amp; App Development</span>
+            <a href="https://github.com/EmaanKashif/SDD_App" target="_blank" rel="noopener" class="card-link">
+              <span>View Repository</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS MATRIX SECTION -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">04 // Technical Proficiency</div>
+        <h2 class="section-title">Skills &amp; Technology Stack.</h2>
+        <p class="section-subtitle">A balanced toolkit combining core statistical algorithms with data engineering &amp;
+          modern web interfaces.</p>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Category 1 -->
+        <div class="skill-category-card reveal-up">
+          <h3 class="skill-cat-title">
+            <svg class="skill-cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+            <span>Languages &amp; Core Data</span>
+          </h3>
+          <div class="skill-items-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Python</span>
+                <span class="skill-level">95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">SQL (PostgreSQL / MySQL)</span>
+                <span class="skill-level">90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Pandas / NumPy</span>
+                <span class="skill-level">92%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="92%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Excel Data Modeling</span>
+                <span class="skill-level">88%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="88%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="skill-category-card reveal-up">
+          <h3 class="skill-cat-title">
+            <svg class="skill-cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+              </path>
+            </svg>
+            <span>ML &amp; Data Analysis</span>
+          </h3>
+          <div class="skill-items-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Machine Learning</span>
+                <span class="skill-level">88%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="88%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">scikit-learn</span>
+                <span class="skill-level">86%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="86%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Exploratory Data Analysis (EDA)</span>
+                <span class="skill-level">92%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="92%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Data Visualization (Power BI)</span>
+                <span class="skill-level">90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="90%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="skill-category-card reveal-up">
+          <h3 class="skill-cat-title">
+            <svg class="skill-cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+            <span>Web Applications &amp; Tools</span>
+          </h3>
+          <div class="skill-items-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">FastAPI Backends</span>
+                <span class="skill-level">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">HTML5 / CSS3 / Modern JS</span>
+                <span class="skill-level">90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Streamlit Apps</span>
+                <span class="skill-level">92%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="92%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Git &amp; Vercel Deployment</span>
+                <span class="skill-level">88%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-level="88%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE TIMELINE -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">05 // Track Record</div>
+        <h2 class="section-title">Experience &amp; Education.</h2>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Data Science Intern</h3>
+                <span class="timeline-company">Clixade — Faisalabad, Pakistan</span>
+              </div>
+              <span class="timeline-date">06/2026 — 08/2026</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Engineered data cleaning scripts and exploratory pipelines for industrial client datasets.</li>
+              <li>Collaborated with engineering teams to optimize data preprocessing models and schema structures.</li>
+              <li>Developed custom dashboards and reporting visualizers for operational key metrics.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">BS Data Science (6th Semester)</h3>
+                <span class="timeline-company">NFC Institute of Engineering &amp; Fertilizer Research</span>
+              </div>
+              <span class="timeline-date">09/2023 — 06/2027</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Core focus: Machine Learning algorithms, Applied Statistics, Relational Databases &amp; Big Data
+                pipelines.</li>
+              <li>Consistently building practical implementations across healthcare, agricultural analytics, and ML web
+                tools.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">06 // Connect</div>
+        <h2 class="section-title">Let's build something with real data.</h2>
+        <p class="section-subtitle">Open to freelance data science projects, internships, and technical research
+          collaborations.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-info-card reveal-up">
+          <div class="contact-item">
+            <span class="contact-label">Email Address</span>
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <a href="mailto:emaankashif7965@gmail.com" class="contact-value">emaankashif7965@gmail.com</a>
+              <button class="btn-copy-email" id="copy-email-btn" title="Copy Email to Clipboard">Copy</button>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-label">Phone Number</span>
+            <a href="tel:+923014275057" class="contact-value">+92 301 4275057</a>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Faisalabad, Pakistan</span>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-label">Socials &amp; Repos</span>
+            <div style="display: flex; gap: 12px; margin-top: 6px;">
+              <a href="https://github.com/EmaanKashif" target="_blank" rel="noopener" class="btn btn-secondary"
+                style="padding: 8px 16px; font-size: 11px;">GitHub ↗</a>
+              <a href="https://linkedin.com/in/emaan-kashif-4397b225b" target="_blank" rel="noopener"
+                class="btn btn-secondary" style="padding: 8px 16px; font-size: 11px;">LinkedIn ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card reveal-up">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="cf-name">Your Name</label>
+              <input type="text" id="cf-name" class="form-control" placeholder="e.g. Sarah Jenkins" required>
+            </div>
+
+            <div class="form-group">
+              <label for="cf-email">Your Email</label>
+              <input type="email" id="cf-email" class="form-control" placeholder="you@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="cf-message">Project / Inquiry Message</label>
+              <textarea id="cf-message" class="form-control" placeholder="Tell me about your dataset or project..."
+                required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary magnetic-btn" style="width: 100%;">
+              <span>Send Message</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE TERMINAL MODAL -->
+  <div class="modal-overlay" id="terminal-modal-overlay">
+    <div class="terminal-modal">
+      <div class="terminal-header">
+        <div class="window-dots">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+        </div>
+        <span class="terminal-title">emaan_kashif_ds_cli ~ (zsh)</span>
+        <button class="btn-close-terminal" id="close-terminal-btn">✕</button>
+      </div>
+      <div class="terminal-body" id="terminal-body">
+        <div class="terminal-output" id="terminal-output">
+          <div class="terminal-line"><span class="text-cyan">Emaan Kashif Interactive Data Science Shell v2.4</span>
+          </div>
+          <div class="terminal-line">Type <span class="text-emerald">'help'</span> for available commands (skills,
+            projects, bio, contact, clear).</div>
+        </div>
+        <div class="terminal-input-row">
+          <span class="terminal-prompt">emaan@datascience:~$</span>
+          <input type="text" class="terminal-input" id="terminal-input" placeholder="Type a command..." autofocus>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATIONS -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>© 2026 Emaan Kashif — Data Scientist</div>
+      <div>Engineered with Vanilla HTML5, Modern CSS &amp; ES6 JavaScript</div>
+      <a href="#about" class="back-to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
