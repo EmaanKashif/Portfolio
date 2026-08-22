@@ -39,8 +39,14 @@
   <nav class="navbar" id="navbar">
     <div class="container nav-content">
       <a href="#" class="brand-logo" aria-label="Emaan Kashif portfolio home">
-        <span class="logo-badge">EK</span>
-        <span>Portfolio</span>
+        <div class="logo-wrapper">
+          <span class="logo-badge">EK</span>
+          <span class="logo-live-dot" title="Available for opportunities"></span>
+        </div>
+        <div class="brand-text-group">
+          <span class="brand-name">Emaan Kashif</span>
+          <span class="brand-sub">Data Scientist &amp; ML</span>
+        </div>
       </a>
 
       <ul class="nav-links" id="nav-links">
@@ -70,29 +76,45 @@
   <!-- HERO SECTION -->
   <section class="hero-section" id="about">
     <canvas id="hero-canvas"></canvas>
+    <div class="hero-ambient-glow"></div>
 
     <div class="container hero-container">
       <div class="hero-content">
-        <div class="status-pill">
+        <div class="status-pill hero-status-pill">
           <span class="status-dot"></span>
           <span>Open for Data Science Work &amp; Internships</span>
         </div>
 
         <div class="hero-name-stack">
-          <div class="hero-name-line">
-            <span class="hero-name-prefix">Emaan</span>
-            <span class="hero-name-accent">Kashif</span>
+          <div class="hero-greeting-line">
+            <span class="greeting-prefix">Hello, I'm</span>
           </div>
-          <div class="hero-role-badge">Data Scientist • ML Engineer</div>
+          <h1 class="hero-main-name">
+            <span class="hero-name-first">Emaan</span>
+            <span class="hero-name-accent text-gradient-cyan">Kashif</span>
+          </h1>
+          <div class="hero-role-pills">
+            <span class="role-pill cyan">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              Data Scientist
+            </span>
+            <span class="role-pill emerald">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              ML Engineer
+            </span>
+            <span class="role-pill purple">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              Data Pipeline Architect
+            </span>
+          </div>
         </div>
 
-        <h1 class="hero-title">
+        <h2 class="hero-title">
           Command over the <span class="text-gradient-cyan">full data pipeline</span>, not just the model.
-        </h1>
+        </h2>
 
         <p class="hero-subtitle">
-          I’m a BS Data Science student at NFC-IEFR Faisalabad, turning messy real-world data — donor registries, crop
-          yields, clinical records — into production ML models, relational schemas, and live web apps.
+          BS Data Science student at NFC-IEFR Faisalabad, turning messy real-world data — donor registries, crop yields, clinical records — into production ML models, relational schemas, and live web apps.
         </p>
 
         <div class="hero-actions">
@@ -109,24 +131,51 @@
               <polygon points="5 3 19 12 5 21 5 3"></polygon>
             </svg>
           </a>
+          <a href="#contact" class="btn btn-outline-emerald magnetic-btn">
+            <span>Get in Touch</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
         </div>
 
         <div class="hero-stats">
-          <div class="stat-item">
-            <span class="stat-number text-gradient-cyan" data-count-to="5" data-suffix="+">0</span>
-            <span class="stat-label">End-to-End Projects</span>
+          <div class="stat-card">
+            <div class="stat-icon-wrap cyan">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-number text-gradient-cyan" data-count-to="5" data-suffix="+">0</span>
+              <span class="stat-label">End-to-End Projects</span>
+            </div>
           </div>
-          <div class="stat-item">
-            <span class="stat-number text-gradient-emerald" data-count-to="100" data-suffix="K+">0</span>
-            <span class="stat-label">Cleaned Records</span>
+          <div class="stat-card">
+            <div class="stat-icon-wrap emerald">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-number text-gradient-emerald" data-count-to="100" data-suffix="K+">0</span>
+              <span class="stat-label">Cleaned Records</span>
+            </div>
           </div>
-          <div class="stat-item">
-            <span class="stat-number text-amber" data-count-to="94.2" data-suffix="%" data-decimal="1">0</span>
-            <span class="stat-label">Model Accuracy</span>
+          <div class="stat-card">
+            <div class="stat-icon-wrap amber">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-number text-amber" data-count-to="94.2" data-suffix="%" data-decimal="1">0</span>
+              <span class="stat-label">Model Accuracy</span>
+            </div>
           </div>
-          <div class="stat-item">
-            <span class="stat-number">6th Sem</span>
-            <span class="stat-label">BS Data Science</span>
+          <div class="stat-card">
+            <div class="stat-icon-wrap purple">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-number">6th Sem</span>
+              <span class="stat-label">BS Data Science</span>
+            </div>
           </div>
         </div>
       </div>
@@ -135,27 +184,82 @@
       <div class="hero-visual-card tilt-card">
         <div class="card-spotlight"></div>
         <div class="visual-header">
-          <div class="window-dots">
+          <div class="window-controls">
             <span class="dot dot-red"></span>
             <span class="dot dot-yellow"></span>
             <span class="dot dot-green"></span>
           </div>
-          <span class="visual-title">pipeline_engine.py — main</span>
+          <div class="code-tab-list" id="code-tabs">
+            <button class="code-tab active" data-tab="python">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              pipeline.py
+            </button>
+            <button class="code-tab" data-tab="json">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path></svg>
+              metrics.json
+            </button>
+            <button class="code-tab" data-tab="sql">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              schema.sql
+            </button>
+          </div>
+          <div class="live-status-tag">
+            <span class="pulse-emerald"></span>
+            <span>Live ML</span>
+          </div>
         </div>
 
-        <div class="code-stream">
-          <p><span class="cm"># Load, clean & train pipeline</span></p>
-          <p><span class="kw">import</span> pandas <span class="kw">as</span> pd</p>
-          <p><span class="kw">from</span> sklearn.ensemble <span class="kw">import</span> RandomForestClassifier</p>
-          <p><span class="kw">from</span> fastapi <span class="kw">import</span> FastAPI</p>
-          <br>
-          <p><span class="fn">@app.post</span>(<span class="str">"/predict/risk"</span>)</p>
-          <p><span class="kw">def</span> <span class="fn">predict_clinical_risk</span>(patient: PatientData):</p>
-          <p>&nbsp;&nbsp;df = <span class="fn">preprocess_sql_features</span>(patient)</p>
-          <p>&nbsp;&nbsp;prob = model.<span class="fn">predict_proba</span>(df)[<span class="num">0</span>][<span
-              class="num">1</span>]</p>
-          <p>&nbsp;&nbsp;<span class="kw">return</span> {<span class="str">"risk_score"</span>: prob * <span
-              class="num">100</span>}</p>
+        <div class="code-tab-panels">
+          <div class="code-panel active" id="tab-python">
+            <div class="code-stream">
+              <p><span class="ln">01</span><span class="cm"># End-to-End ML Pipeline &amp; API Service</span></p>
+              <p><span class="ln">02</span><span class="kw">import</span> pandas <span class="kw">as</span> pd</p>
+              <p><span class="ln">03</span><span class="kw">from</span> sklearn.ensemble <span class="kw">import</span> RandomForestClassifier</p>
+              <p><span class="ln">04</span><span class="kw">from</span> fastapi <span class="kw">import</span> FastAPI</p>
+              <p><span class="ln">05</span></p>
+              <p><span class="ln">06</span>app = FastAPI(title=<span class="str">"Clinical Risk Predictor"</span>)</p>
+              <p><span class="ln">07</span>model = RandomForestClassifier(n_estimators=<span class="num">200</span>, random_state=<span class="num">42</span>)</p>
+              <p><span class="ln">08</span></p>
+              <p><span class="ln">09</span><span class="fn">@app.post</span>(<span class="str">"/predict/risk"</span>)</p>
+              <p><span class="ln">10</span><span class="kw">def</span> <span class="fn">predict_clinical_risk</span>(patient: PatientData):</p>
+              <p><span class="ln">11</span>&nbsp;&nbsp;df = <span class="fn">preprocess_sql_features</span>(patient)</p>
+              <p><span class="ln">12</span>&nbsp;&nbsp;prob = model.<span class="fn">predict_proba</span>(df)[<span class="num">0</span>][<span class="num">1</span>]</p>
+              <p><span class="ln">13</span>&nbsp;&nbsp;<span class="kw">return</span> {<span class="str">"risk_score"</span>: <span class="fn">round</span>(prob * <span class="num">100</span>, <span class="num">2</span>)}</p>
+            </div>
+          </div>
+          <div class="code-panel" id="tab-json">
+            <div class="code-stream">
+              <p><span class="ln">01</span>{</p>
+              <p><span class="ln">02</span>&nbsp;&nbsp;<span class="str">"model"</span>: <span class="str">"RandomForestClassifier"</span>,</p>
+              <p><span class="ln">03</span>&nbsp;&nbsp;<span class="str">"accuracy"</span>: <span class="num">0.942</span>,</p>
+              <p><span class="ln">04</span>&nbsp;&nbsp;<span class="str">"roc_auc"</span>: <span class="num">0.978</span>,</p>
+              <p><span class="ln">05</span>&nbsp;&nbsp;<span class="str">"precision"</span>: <span class="num">0.935</span>,</p>
+              <p><span class="ln">06</span>&nbsp;&nbsp;<span class="str">"recall"</span>: <span class="num">0.951</span>,</p>
+              <p><span class="ln">07</span>&nbsp;&nbsp;<span class="str">"dataset_records"</span>: <span class="num">104250</span>,</p>
+              <p><span class="ln">08</span>&nbsp;&nbsp;<span class="str">"latency_ms"</span>: <span class="num">14.2</span></p>
+              <p><span class="ln">09</span>}</p>
+            </div>
+          </div>
+          <div class="code-panel" id="tab-sql">
+            <div class="code-stream">
+              <p><span class="ln">01</span><span class="cm">-- Optimized Relational Schema for ML Features</span></p>
+              <p><span class="ln">02</span><span class="kw">CREATE TABLE</span> clinical_features (</p>
+              <p><span class="ln">03</span>&nbsp;&nbsp;patient_id <span class="kw">UUID PRIMARY KEY</span>,</p>
+              <p><span class="ln">04</span>&nbsp;&nbsp;age <span class="kw">INT NOT NULL</span>,</p>
+              <p><span class="ln">05</span>&nbsp;&nbsp;blood_pressure <span class="kw">NUMERIC</span>(<span class="num">5</span>, <span class="num">2</span>),</p>
+              <p><span class="ln">06</span>&nbsp;&nbsp;cholesterol <span class="kw">NUMERIC</span>(<span class="num">5</span>, <span class="num">2</span>),</p>
+              <p><span class="ln">07</span>&nbsp;&nbsp;created_at <span class="kw">TIMESTAMP DEFAULT CURRENT_TIMESTAMP</span></p>
+              <p><span class="ln">08</span>);</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="visual-footer">
+          <div class="footer-meta">
+            <span class="meta-item"><span class="meta-dot cyan"></span> Python 3.11</span>
+            <span class="meta-item"><span class="meta-dot emerald"></span> scikit-learn</span>
+            <span class="meta-item"><span class="meta-dot amber"></span> FastAPI</span>
+          </div>
         </div>
       </div>
     </div>
